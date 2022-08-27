@@ -3,7 +3,7 @@ import sqlite3
 
 arquivo = open('scrap/brasileirao/resultado.json')
 data = json.load(arquivo)
-connection = sqlite3.connect('webservice/db.sqlite3')
+connection = sqlite3.connect('db.sqlite3')
 cursor = connection.cursor()
 
 for resultado in data:
