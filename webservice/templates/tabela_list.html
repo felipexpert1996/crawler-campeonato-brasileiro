@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela geral</title>
+    <style>
+        .conteiner {
+            display: grid;
+            grid-template-rows: 100%
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th {
+            text-align:left
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <table>
+            <tr>
+              <th>Nome</th>
+              <th>Pontos</th>
+              <th>Jogos</th>
+              <th>Vitórias</th>
+              <th>Empates</th>
+              <th>Derrotas</th>
+              <th>Gols pró</th>
+              <th>Gols contra</th>
+              <th>Saldo de gols</th>
+            </tr>
+            {%for time in object %}
+                <tr>
+                    <td>{{time.time__nome}}</td>
+                    <td>{{time.pontos__sum}}</td>
+                    <td>{{time.jogos__sum}}</td>
+                    <td>{{time.vitorias__sum}}</td>
+                    <td>{{time.empates__sum}}</td>
+                    <td>{{time.derrotas__sum}}</td>
+                    <td>{{time.gols_marcados__sum}}</td>
+                    <td>{{time.gols_sofridos__sum}}</td>
+                    <td>{{time.gols_saldo__sum}}</td>
+                </tr>
+            {%endfor%}
+          </table>
+    </main>    
+    
+</body>
+</html>

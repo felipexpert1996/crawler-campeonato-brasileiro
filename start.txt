@@ -1,0 +1,8 @@
+scrapy crawl tabelas -o resultado.json
+scrapy crawl tabelas_2022 -o resultado_2022.json
+
+python manage.py migrate
+
+python insert_data.py 
+
+python manage.py runserver
