@@ -1,5 +1,5 @@
 """
-ASGI config for webservice project.
+ASGI config for crawler_campeonato_brasileiro project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'webservice.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'crawler_campeonato_brasileiro.settings')
 
 application = get_asgi_application()

@@ -1,5 +1,5 @@
 """
-WSGI config for webservice project.
+WSGI config for crawler_campeonato_brasileiro project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'webservice.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'crawler_campeonato_brasileiro.settings')
 
 application = get_wsgi_application()
